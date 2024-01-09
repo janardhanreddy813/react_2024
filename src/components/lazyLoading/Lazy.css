@@ -1,0 +1,13 @@
+.lazy-nav a{
+        text-decoration:none;
+        color:#111;
+        font-size:16px;
+        padding: 6px;
+        font-weight:bold
+
+}
+.lazy-nav a.active{
+
+    text-decoration:underline;
+    color:red
+}

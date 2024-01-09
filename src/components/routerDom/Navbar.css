@@ -1,0 +1,11 @@
+.nav-container a {
+
+  padding: 8px;
+ text-decoration:none ;
+ color:#222 ;
+ font-size:20px;
+ font-weight:bold;
+
+}
+
+nav a.active{ color:red; text-decoration:underline}

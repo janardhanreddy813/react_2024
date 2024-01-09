@@ -1,0 +1,39 @@
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import About from './components/routerDom/About'
+import Contact from './components/routerDom/Contact'
+import Home from './components/routerDom/Home'
+import Navabar from './components/routerDom/Navabar'
+import PageNotFound from './components/routerDom/PageNotFound'
+// import SuccessPage from './components/routerDom/SuccessPage'
+import Projects from './components/routerDom/projects/Projects'
+import FeatureProjects from './components/routerDom/projects/FeatureProjects'
+import NewProjects from './components/routerDom/projects/NewProjects'
+import Users from './components/routerDom/Users'
+import UsersDetails from './components/routerDom/UsersDetails'
+
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Navabar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/success" element={<SuccessPage />} /> */}
+          <Route path="/projects" element={<Projects />}>
+          <Route index element={<FeatureProjects/>}/>
+            <Route path="feature" element={<FeatureProjects />} />
+            <Route path="new" element={<NewProjects />} />
+          </Route>
+          <Route path="/users" element={<Users />} />
+          <Route path="/users/:usersId" element={<UsersDetails />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+export default App
