@@ -1,11 +1,10 @@
 import React from 'react'
-import Index from './practice/useMemo/Index'
+
 const App = () => {
-  return (
-    <div>
-      <Index />
-    </div>
-  )
+  return <div>
+
+    <h2> hai</h2>
+  </div>
 }
 
 export default App
