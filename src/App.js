@@ -1,11 +1,7 @@
-import React from 'react'
-import Index from './practice/useMemo/Index'
-const App = () => {
-  return (
-    <div>
-      <Index />
-    </div>
-  )
-}
+import React from "react";
 
-export default App
+const App = () => {
+  return <div></div>;
+};
+
+export default App;
